@@ -4,6 +4,7 @@ import { Ui } from "./ui";
 import { TIME_IN_MS } from "../common/time-in-ms";
 import * as messaging from "messaging";
 
+
 let contract;
 let ui;
 let startSteps;
@@ -22,13 +23,14 @@ export function App() {
                 relateiveSteps: relativeSteps,
                 contractFulfilled: false
             }
-            console.log(startSteps)
             if ( contract ) {
                 if ( relativeSteps > contract.targetSteps) {
+                    ui.showFinish("Success");
 
+                } else {
+                    ui.showContract(today, contract, relativeSteps);
+                    stepUpdate.contract = true
                 }
-                ui.showContract(today, contract);
-                stepUpdate.contract = true
             } else {
                 ui.updateStatus("No Contract Yet");
             }
@@ -45,3 +47,4 @@ App.prototype.update = function(data, steps) {
         startSteps = steps;
     }
 };
+
