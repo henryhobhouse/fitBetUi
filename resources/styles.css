@@ -2,14 +2,12 @@ svg {
     viewport-fill: fb-cyan;
 }
 
-.large-value {
-    font-family: Seville-Book;
-    font-size: 120;
-    fill: #F80070;
-}
-
-.updated {
-    font-family: Seville-Book;
-    font-size: 64;
-    fill: #ffffff;
+#myLabel {
+    font-size: 80;
+    font-family: System-Bold;
+    text-length: 32;
+    text-anchor: middle;
+    x: 50%;
+    y: 50%+40;
+    fill: white;
 }

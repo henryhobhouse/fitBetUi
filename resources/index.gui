@@ -1,4 +1,20 @@
 <svg>
-    <text id="hrm" x="0" y="72%" class="large-value">0</text>
-    <text id="updated" x="0" y="92%" class="updated">now!</text>
+    <text id="status" x="50%" y="10%+15"
+          fill="white" font-size="40" font-family="Tungsten-Medium"
+          text-anchor="middle" text-length="1000"></text>
+    <text id="steps" x="50%" y="25%+15"
+          fill="white" font-size="40" font-family="Tungsten-Medium"
+          text-anchor="middle" text-length="1000">Steps</text>
+    <text id="stepsComplete" x="50%" y="40%+15"
+          fill="white" font-size="40" font-family="Tungsten-Medium"
+          text-anchor="middle" text-length="1000">Remaining: waiting</text>
+    <text id="startTime" x="50%" y="60%+15"
+          fill="white" font-size="40" font-family="Tungsten-Medium"
+          text-anchor="middle" text-length="1000">Start: waiting</text>
+    <text id="finishTime" x="50%" y="75%+15"
+          fill="white" font-size="40" font-family="Tungsten-Medium"
+          text-anchor="middle" text-length="1000">Finish: waiting</text>
+    <text id="percentage" x="50%" y="90%+15"
+          fill="white" font-size="40" font-family="Tungsten-Medium"
+          text-anchor="middle" text-length="1000"></text>
 </svg>
